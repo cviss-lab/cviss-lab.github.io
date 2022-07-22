@@ -1,6 +1,6 @@
 Point Cloud Viewer Link:
 
-https://beamrobotics.github.io/
+https://cviss-lab.github.io/
 
 Instructions for adding point clouds:
 
@@ -52,11 +52,11 @@ cd ~/prog/PotreeConverter/build/PotreeConverter
 ```
 
 ### 4) Copying the folders that you generate
-1) Create a folder inside BEAMRobotics.github.io/potree/results/results_ig with a project name for your pointcloud (e.g., demo_01).
+1) Create a folder inside cviss-lab.github.io/potree/results/results_ig with a project name for your pointcloud (e.g., demo_01).
 2) Inside the demo_01 folder you will do 3 things:
     - create a "cloud" folder & copy the contents from  ~/path_to_output_folder/pointclouds/project_name into the cloud folder (see existing results to confirm what is inside the "cloud" folder)
     - "demo_01.html": copy the project_name.html from ~/path_to_output_folder.
     If this does not work, you can copy the demo_01.html file and rename it to
     project_name.html
     - thumbnail: create a thumbnail manually (the text which overlays the thumbnail is automatically added)
-3) Inside BEAMRobotics.github.io/content.js, add a line for your project_name (change the names as appropriate)
+3) Inside cviss-lab.github.io/content.js, add a line for your project_name (change the names as appropriate)
