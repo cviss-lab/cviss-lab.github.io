@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<meta name="description" content="SMI Mapping Results">
+		<meta name="author" content="SMI Technologies">
+		<link rel="icon" href="../../favicon.ico">
+
+		<title>SMI Inc. | Maps</title>
+
+		<!-- Bootstrap core CSS -->
+		<link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Custom styles for this template -->
+		<link href="potree.css" rel="stylesheet">
+
+		<!-- Google Analytics - Attached to Nicks gmail -->
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+			<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139157422-1"></script> -->
+			<script>
+			  window.dataLayer = window.dataLayer || [];
+			  function gtag(){dataLayer.push(arguments);}
+			  gtag('js', new Date());
+
+			  gtag('config', 'UA-139157422-1');
+			</script>
+			
+	</head>
+
+	<body>
+
+	<script src="content.js"></script>
+
+	<div class="container">
+	<div class="jumbotron">
+
+		<h2>SMI Technologies Inc | Map Viewer</h2>
+		<br><br>
+		<h3>Welcome to our online map viewer! Here you will find interacting maps of
+		pervious scans performed the SMI Group (CViSS Labs, SDIC & BEAM).
+		<br><br>
+		</h3>
+		<hr>
+		<h4>Platforms</h4>
+		<h3>
+		<br><br>
+		Past and Present scanning systems:
+		<br><br>
+		</h3>
+
+		<div id="results_container">
+
+			<div id="ig3_container">
+				<h3><strong>1. Inspector Gadget 3 (IG-3) :</strong> IG-3 is a handheld scanner mapper without compromise.
+					Tightly coupled Lidar-IMU, RGB-D Camera, 360-Panorama and GPS, the IG-3 is the workhorse of
+					the SMI Group. The difference between IGs past is that IG-3 uses a solid state lidar,
+					which allows SMI Inc. to build IG-3 at an unbeatable price-point.
+					But, the true magic of IG-3 is its cutting edge software, which allows inspectors to use IG-3 to
+					create large continuous maps and integrate AR/VR to add semantics to the map.
+				</h3>
+				<br><br>
+			</div>
+			<div id="ig4_container">
+				<h3><strong>2. Inspector Gadget 4 (IG-4) :</strong> Form-factor was a big focus for IG-4, featuring
+					tightly coupled Lidar-IMU and a high resolution FLIR Blackfly RGB camera. Featuring all the greatest
+					hits of IG-3, the tight form-factor of IG-4 goes anywhere you can put a DSLR. This opens up a wide
+					range of applications such as vehicular mount, backpack-tripod, drone etc. Inquire for details!
+					</h3>
+				<br><br>
+			</div>
+			<div id="retired_igs">
+				<h3><strong>3. Retired Inspector Gadget (IG-R) :</strong> IG was created as a research project by the SDIC,
+					maintained by BEAM, to conduct structural inspections of bridges. This project is inherited by
+					Computer Vision and Smart Structures Lab (CViSS) at the University of Waterloo. IG handles are of a
+					modular design however, they are not hand portable and thus should be mounted on our robotic platforms.
+				</h3>
+				<br><br>
+			</div>
+		</div>
+
+		<div id="results_container">
+			<div id="ig3_container">
+				<img src="images/IG3_small_removebg.png" alt="IG3" /><br />
+			</div>
+			<div id="ig4_container">
+				<img src="images/IG4.png" alt="IG4" /><br />
+			</div>
+			<div id="retired_igs">
+				<img src="images/InspectorGadget.jpg" alt="IGR" /><br />
+			</div>
+		</div>
+
+		<br><br>
+		<hr>
+		<h4>Map Results</h4>
+		<br><br>
+
+		<div id="results_container">
+
+			<div id="a_retired_igs">
+				<h1>IG-R Maps</h1>
+				<script>includeAIGRResults();</script>
+			</div>
+
+			<div id="ig_container">
+				<h1>IG-3 Maps</h1>
+				<script>includeIGResults();</script>
+			</div>
+
+			<div id="roben_container">
+				<h1>IG-4 Maps</h1>
+				<script>includeRobenResults();</script>
+			</div>
+
+		</div>
+
+		<br><br>
+
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+		<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	</body>
+</html>
