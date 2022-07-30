@@ -8,7 +8,7 @@ let settings = {
 	"results_ig4": [
 		{"thumb": "potree/results/results_ig4/SDIC_Lab/SDIC_Lab.png", "label": "SDIC Lab", "url": "SDIC_Lab/SDIC_Lab.html"},
 		{"thumb": "potree/results/results_ig4/UW_Structures_Lab/UW_Structures_Lab.png", "label": "Structures Lab", "url": "UW_Structures_Lab/UW_Structures_Lab.html"},
-		{"thumb": "potree/results/results_ig4/Bridge_of_Shame/bridge_of_shame.png", "label": "Bridge of Shame", "url": "Bridge_of_Shame/Bridge_of_Shame.html"}
+		{"thumb": "potree/results/results_ig4/Bridge_of_Shame/bridge_of_shame.png", "label": "Park St. Bridge", "url": "Bridge_of_Shame/Bridge_of_Shame.html"}
 	],
 	"results_faro": [
 		// {"thumb": "potree/results/results_faro/ats_faro/ats_faro.png", "label": "ATS (Faro)", "url": "ats_faro/ats_faro.html"},

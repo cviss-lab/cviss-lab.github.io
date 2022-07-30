@@ -46,6 +46,9 @@ viewer.setDescription(``);
 
 	window.viewer = new Potree.Viewer(document.getElementById("potree_render_area"));
 
+	viewer.scene.view.position.set(3.181, 2.700, 4.761);
+	viewer.scene.view.lookAt(new THREE.Vector3(3.181, 2.700, 4.761));
+
 	viewer.setEDLEnabled(true);
 	viewer.setFOV(60);
 	viewer.setPointBudget(1*1000*1000);
@@ -68,7 +71,41 @@ viewer.setDescription(``);
 	Potree.loadPointCloud("cloud/cloud.js", "lion", e => {
 		let pointcloud = e.pointcloud;
 		let material = pointcloud.material;
+
+
+
+
 		viewer.scene.addPointCloud(pointcloud);
+		viewer.scene.addAnnotation([18.330730438232,-2.879261016846,3.938724756241],
+				{"title": "Name of site: Park Street Rail Bridge",
+					"cameraPosition": [3.181, 2.700, 4.761],
+					"cameraTarget": [18.330730438232,-2.879261016846,3.938724756241],
+					"description": 'Last Inspection: July 2020 <br/> Clearance 3.4m <br/> Measured Height 4m'});
+
+		viewer.scene.addAnnotation([18.309204101562,-3.071499586105,0.877827644348],
+				{"title": "Scaling on Pier",
+					"cameraPosition": [13.994, -5.854, 3.002],
+					"cameraTarget": [18.309204101562,-3.071499586105,0.877827644348],
+					"description": 'Condition: Poor (Area > 1 sq.m)'});
+
+		viewer.scene.addAnnotation([22.266, -6.728, -0.235],
+				{"title": "Spall on Pier",
+					"cameraPosition": [19.579, -9.247, 0.215],
+					"cameraTarget": [22.266, -6.728, -0.235],
+					"description": 'Condition: Poor (Area > 1 sq.m)'});
+
+		viewer.scene.addAnnotation([18.876, -8.498, 1.423],
+				{"title": "Concrete Spall",
+					"cameraPosition": [16.722, -8.856, -0.893],
+					"cameraTarget": [18.876, -8.498, 1.423],
+					"description": 'Condition: Poor (Area > 1 sq.m) <br/> Exposed Rebar <br/> Caused by vehicular collision'});
+
+		viewer.scene.addAnnotation([13.342, -10.165, -0.685],
+				{"title": "Scaling on Embankment",
+					"cameraPosition": [12.627, -6.954, -0.384],
+					"cameraTarget": [13.342, -10.165, -0.685],
+					"description": 'Condition: Poor (Area > 1 sq.m)'});
+
 		material.pointColorType = Potree.PointColorType.RGB; // any Potree.PointColorType.XXXX
 		material.size = 1;
 		material.pointSizeType = Potree.PointSizeType.ADAPTIVE;
